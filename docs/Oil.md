@@ -3,6 +3,12 @@ title: Oil
 nav_order: 2
 ---
 
+```yaml
+# Enable or disable the side/mobile menu globally
+# Nav menu can also be selectively enabled or disabled using page variables or the minimal layout
+nav_enabled: true
+```
+
 #Test
 因此，如果你的项目中，并没有很多的传导，那么是不需要这一届的内容的。
 
