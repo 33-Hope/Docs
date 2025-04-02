@@ -1,5 +1,5 @@
 ---
-title: Home
+title: 课程介绍
 layout: home
 nav_order: 1
 ---
