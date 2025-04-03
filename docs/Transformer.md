@@ -8,38 +8,31 @@ nav_order: 3
 ## 2.1实验描述
   该实验仅使用transformer解码器的模型进行训练，实现Pokémon图像的下一个token预测。
   下一个token预测是语言简模型的一个基本概念，根据前面上下文预测序列中最有可能出现的下一个单词或者token。
-![NextToken](images/Transformer/NextToken.png)
-
+<img src = "../assets/images/Transformer/NextToken.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.1 下一个token预测</center> 
 
 实验需要训练模型预测Pokémon图像的下一个token。在测试集中，给出图像的60%部分，预测剩余的部分。
 
-![Pokémon](images/Transformer/Pokémon.png)
-
+<img src = "../assets/images/Transformer/Pokémon.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.2 Pokémon图像下一个token预测</center>
 
-![TestExample](images/Transformer/TestExample.png)
-
+<img src = "../assets/images/Transformer/TestExample.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.3 测试集示例</center>
 
-![ToNextToken](images/Transformer/ToNextToken.png)
-
+<img src = "../assets/images/Transformer/ToNextToken.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.4 Pokémon图像下一个token预测模型结构</center>
 
 ## 2.2实验数据
 
   实验数据包含792张Pokémon的图像片20×20），每张图片有400个数字，每个数字代表一种颜色。训练集632张，验证集80张，测试集80张。有167种不同的像素颜色的像素种类。
 
-![PokemonImages](images/Transformer/PokemonImages.png)
-
+<img src = "../assets/images/Transformer/PokemonImages.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.5 Pokémon图片</center>
 
-![Data](images/Transformer/Data.png)
-
+<img src = "../assets/images/Transformer/Data.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.6 数据展示</center>
 
-![RGB](images/Transformer/RGB.png)
-
+<img src = "../assets/images/Transformer/RGB.png">
 <center style="font-size:16px;color:#C0C0C0;">图2.7 每张图片的RGB</center>
 
 ## 2.3实验内容
