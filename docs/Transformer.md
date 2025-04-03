@@ -22,14 +22,16 @@ nav_order: 3
 修改给定代码中的模型配置的超参数，调整给定代码中的epoch和学习率，找到模型的最佳参数组合，模型参数调整可以选用合适的方法寻找参数组合。
 3.	不同模型架构
 除了示例代码给的GPT-2模型架构以为，实验还需要使用Qwen2、Llama和Mistral三种仅使用transformer解码器的模型架构进行实验，根据参考资料给的配置配置其参数，并完成Pokémon图像的预测。
+
 ## 2.4实验要求
 1.	掌握使用当前的语言模型预测下一个token
 2.	理解transformer结构在图像中的应用
 3.	完成实验内容中的三个要求，并撰写实验报告和提交Jupyter格式的代码
+   
 ## 2.5参考资料
-1.	Qwen2Config：https://huggingface.co/docs/transformers/model_doc/qwen2 - transformers.Qwen2Config
-2.	LlamaConfig：https://huggingface.co/docs/transformers/model_doc/llama - transformers.LlamaConfig
-3.	MistralConfig：https://huggingface.co/docs/transformers/model_doc/mistral - transformers.MistralConfig
+1.	Qwen2Config：[https://huggingface.co/docs/transformers/model_doc/qwen2 - transformers.Qwen2Config](https://huggingface.co/docs/transformers/model_doc/qwen2#transformers.Qwen2Config)
+2.	LlamaConfig：[https://huggingface.co/docs/transformers/model_doc/llama - transformers.LlamaConfig](https://huggingface.co/docs/transformers/model_doc/llama#transformers.LlamaConfig)
+3.	MistralConfig：[https://huggingface.co/docs/transformers/model_doc/mistral - transformers.MistralConfig](https://huggingface.co/docs/transformers/model_doc/llama#transformers.LlamaConfig)
 
 
 
