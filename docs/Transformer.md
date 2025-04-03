@@ -8,14 +8,42 @@ nav_order: 3
 ## 2.1实验描述
   该实验仅使用transformer解码器的模型进行训练，实现Pokémon图像的下一个token预测。
   下一个token预测是语言简模型的一个基本概念，根据前面上下文预测序列中最有可能出现的下一个单词或者token。
-  ![下一个token预测](.\Images\Transformer\NextToken.png)
-  实验需要训练模型预测Pokémon图像的下一个token。在测试集中，给出图像的60%部分，预测剩余的部分。
+![NextToken](images/NextToken.png)
 
+<center style="font-size:14px;color:#C0C0C0;">图2.1 下一个token预测</center> 
+
+实验需要训练模型预测Pokémon图像的下一个token。在测试集中，给出图像的60%部分，预测剩余的部分。
+
+![Pokémon](images/Pokémon.png)
+
+<center style="font-size:14px;color:#C0C0C0;">图2.2 Pokémon图像下一个token预测</center>
+
+![TestExample](images/TestExample.png)
+
+<center style="font-size:14px;color:#C0C0C0;">图2.3 测试集示例</center>
+
+![PokémonToNextToken](images/PokémonToNextToken.png)
+
+<center style="font-size:14px;color:#C0C0C0;">图2.4 Pokémon图像下一个token预测模型结构</center>
 
 ## 2.2实验数据
+
   实验数据包含792张Pokémon的图像片20×20），每张图片有400个数字，每个数字代表一种颜色。训练集632张，验证集80张，测试集80张。有167种不同的像素颜色的像素种类。
 
+![PokémonImages](images/PokémonImages.png)
+
+<center style="font-size:14px;color:#C0C0C0;">图2.5 Pokémon图片</center>
+
+<img src="images/Data.png" alt="Data" style="zoom:150%;" />
+
+<center style="font-size:14px;color:#C0C0C0;">图2.6 数据展示</center>
+
+![RGB](images/RGB.png)
+
+<center style="font-size:14px;color:#C0C0C0;">图2.7 每张图片的RGB</center>
+
 ## 2.3实验内容
+
 1.	Transformer解码器预测token
 使用Pokémon图像和提供的代码构建一个仅使用transformer解码器的模型（transformer decoder-only model），用于预测下一个token。
 2.	参数调整
@@ -27,7 +55,7 @@ nav_order: 3
 1.	掌握使用当前的语言模型预测下一个token
 2.	理解transformer结构在图像中的应用
 3.	完成实验内容中的三个要求，并撰写实验报告和提交Jupyter格式的代码
-   
+
 ## 2.5参考资料
 1.	Qwen2Config：[https://huggingface.co/docs/transformers/model_doc/qwen2 - transformers.Qwen2Config](https://huggingface.co/docs/transformers/model_doc/qwen2#transformers.Qwen2Config)
 2.	LlamaConfig：[https://huggingface.co/docs/transformers/model_doc/llama - transformers.LlamaConfig](https://huggingface.co/docs/transformers/model_doc/llama#transformers.LlamaConfig)
