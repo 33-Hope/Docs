@@ -8,7 +8,7 @@ nav_order: 3
 ## 2.1实验描述
   该实验仅使用transformer解码器的模型进行训练，实现Pokémon图像的下一个token预测。
   下一个token预测是语言简模型的一个基本概念，根据前面上下文预测序列中最有可能出现的下一个单词或者token。
-
+  ![下一个token预测](.\Images\Transformer\NextToken.png)
   实验需要训练模型预测Pokémon图像的下一个token。在测试集中，给出图像的60%部分，预测剩余的部分。
 
 
