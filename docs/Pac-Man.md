@@ -10,9 +10,10 @@ nav_order: 4
 
 # 吃豆人-强化学习
 ## Contents
-
 {: .no_toc .text-delta }
 
+1. TOC
+{:toc}
 ---
 
 ## 1.实验背景
@@ -160,7 +161,7 @@ python autograder.py -q q5
 
 其中，`f_i(s, a)`是特征值，`w_i`是对应的权重。采用类似标准Q-Learning 的方式更新权重：
 
-` w_i \leftarrow w_i + \alpha \cdot \text{difference} \cdot f_i(s, a) `
+$$ w_i \leftarrow w_i + \alpha \cdot \text{difference} \cdot f_i(s, a) $$
 
 其中：` \text{difference} = (r + \gamma \max_{a'} Q(s', a')) - Q(s, a) `
 
