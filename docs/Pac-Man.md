@@ -4,9 +4,7 @@ title: 吃豆人
 parent: 实验题目
 nav_order: 4
 mathjax: true
-tags: 
-  - latex
-  - math
+
 ---
 
 
