@@ -6,5 +6,5 @@ url: https://33-Hope.github.io/Docs
 
 aux_links:
   Template Repository: https://github.com/33-Hope/Docs
-# compress_html:
-#   blank_lines: false
+compress_html:
+  blank_lines: false
