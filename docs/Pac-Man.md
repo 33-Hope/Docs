@@ -4,9 +4,19 @@ title: 吃豆人
 parent: 实验题目
 nav_order: 4
 ---
+
+
+
+
 # 吃豆人-强化学习
- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+## Contents
+
+{: .no_toc .text-delta }
+
+---
+
 ## 1.实验背景
+
 随着人工智能和机器学习技术的迅速发展，强化学习（Reinforcement Learning）作为一种重要的学习范式，在解决现实世界中复杂问题方面取得了显著的成果。强化学习通过智能体（agent）与环境（environment）的交互，通过学习合适的动作来最大化累积奖励，是人工智能领域中的热门研究方向之一。
 
 路径规划是强化学习在实际应用中的一个典型场景，尤其在无人驾驶、机器人导航、游戏AI等领域具有重要意义。在这些应用中，智能体需要在复杂的环境中找到最优路径，以便高效地到达目的地。传统的路径规划算法面临着环境复杂性增加时计算复杂度急剧上升的问题，而强化学习算法能够通过与环境的交互学习到适应不同环境的最优路径，具有很好的适应性和泛化能力。
@@ -14,7 +24,10 @@ nav_order: 4
 本实验基于经典的吃豆人（Pacman）游戏，逐步实现强化学习核心算法，从基础的值迭代，到更高级的Q-Learning和近似Q-Learning，最终目标是让智能体在吃豆人游戏中中自主学习最优策略。通过对参数的调整和理解算法原理，掌握让智能体找到最优动作的方法。
 <img src = "../assets/images/Pac-Man/PacMan.png">
 
+---
+
 ## 2.实验要求
+
 （1）掌握强化学习中的值迭代算法、Q-Learning和近似Q-Learning算法
 
 （2）掌握强化学习中的策略，学会设计策略
@@ -23,7 +36,10 @@ nav_order: 4
 
 （4）理解并熟悉提供的代码结构和实现逻辑
 
+---
+
 ## 3.实验内容
+
 ### 3.1 值迭代算法（Value Iteration）
 
 理解马尔可夫决策过程和贝尔曼方程，并在valueIterationAgents.py文件中编写值迭代算法，让智能体通过反复计算每个状态的价值，找到最优的行动策略。通过不断更新每个位置的价值，直到这些价值稳定下来（例如，计算100次），最后根据价值选择最佳路径。利用公式反复计算，确保每一步都基于前一步的结果。
@@ -31,7 +47,9 @@ nav_order: 4
 在提供的参考代码中，可以看到一个网格世界，智能体回根据计算出来的价值自动导航到出口。
 
 值迭代状态更新公式：
-`V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]`
+
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>`V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]`
+
 操作命令：
 
 （1）测试算法算法正确性：
@@ -54,6 +72,8 @@ python gridworld.py -a value -i 100 -k 10
 python gridworld.py -a value -i 5
 ```
 
+---
+
 ### 3.2 策略（Policies）
 
 在一个有“悬崖”和出口的网格中，如下图所示，红色部分为悬崖，绿色为出口，黄色为起始位置，格子中的数值为智能体的回报。有两种类型的路径选择：（1）冒着悬崖的风险，在网格的底线附近行走，路径较短，但是有产生巨额负回报的风险，这些路径由下图中的红色箭头表示；（2）避免悬崖并沿着网格顶端边缘行走，路径更长，但不太可能产生巨大的负回报，这些路径由下图中的绿色箭头表示。
@@ -74,6 +94,8 @@ python gridworld.py -a value -i 5
 
 （5）避免两个出口和悬崖（即一个回合永远不应终止）
 
+---
+
 ### 3.3 Q-Learning
 
 实现一个Q-Learning智能体，该智能体通过与环境的交互，利用试错方法学习最优策略。与值迭代智能体不同，Q-Learning智能体在构造时几乎不进行任何初始化，而是在与环境交互的过程中通过update(state, action, nextState, reward)方法进行学习。
@@ -93,6 +115,8 @@ python gridworld.py -a q -k 5 -m
 ```bash
 python autograder.py -q q3
 ```
+
+---
 
 ### 3.4	利用Q-Learning玩吃豆人
 
@@ -121,6 +145,8 @@ python pacman.py -p PacmanQAgent -n 10 -l smallGrid -a numTraining=10
 ```bash
 python autograder.py -q q5
 ```
+
+---
 
 ###  3.5 近似Q-Learning
 
@@ -166,7 +192,7 @@ python pacman.py -p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -
 python autograder.py -q q6
 ```
 
-
+---
 
 
 ## 4.参考资料
