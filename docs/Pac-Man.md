@@ -157,9 +157,15 @@ python autograder.py -q q5
 
 使用featureExtractors.py提供的特征提取函数，从状态-动作对(s, a)中提取特征值。
 
-采用线性函数逼近Q值：`Q(s, a) = \sum_{i=1}^{n} f_i(s, a) w_i`
+采用线性函数逼近Q值：
 
-其中，`f_i(s, a)`是特征值，`w_i`是对应的权重。采用类似标准Q-Learning 的方式更新权重：
+$$
+\begin{aligned}
+Q(s, a) = \sum_{i=1}^{n} f_i(s, a) w_i
+\end{aligned}
+$$
+
+其中，\begin{aligned}f_i(s, a)\end{aligned}是特征值，`w_i`是对应的权重。采用类似标准Q-Learning 的方式更新权重：
 
 $$ w_i \leftarrow w_i + \alpha \cdot \text{difference} \cdot f_i(s, a) $$
 
