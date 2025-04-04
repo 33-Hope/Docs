@@ -5,7 +5,7 @@ parent: 实验题目
 nav_order: 4
 ---
 # 吃豆人-强化学习
-
+ <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 ## 1.实验背景
 随着人工智能和机器学习技术的迅速发展，强化学习（Reinforcement Learning）作为一种重要的学习范式，在解决现实世界中复杂问题方面取得了显著的成果。强化学习通过智能体（agent）与环境（environment）的交互，通过学习合适的动作来最大化累积奖励，是人工智能领域中的热门研究方向之一。
 
@@ -31,7 +31,7 @@ nav_order: 4
 在提供的参考代码中，可以看到一个网格世界，智能体回根据计算出来的价值自动导航到出口。
 
 值迭代状态更新公式：
-$V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]$
+`V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]`
 操作命令：
 
 （1）测试算法算法正确性：
@@ -130,13 +130,13 @@ python autograder.py -q q5
 
 使用featureExtractors.py提供的特征提取函数，从状态-动作对(s, a)中提取特征值。
 
-采用线性函数逼近Q值：$$Q(s, a) = \sum_{i=1}^{n} f_i(s, a) w_i$$
+采用线性函数逼近Q值：`Q(s, a) = \sum_{i=1}^{n} f_i(s, a) w_i`
 
-其中，$f_i(s, a)$是特征值，$w_i$是对应的权重。采用类似标准Q-Learning 的方式更新权重：
+其中，`f_i(s, a)`是特征值，`w_i`是对应的权重。采用类似标准Q-Learning 的方式更新权重：
 
-$ w_i \leftarrow w_i + \alpha \cdot \text{difference} \cdot f_i(s, a) $
+` w_i \leftarrow w_i + \alpha \cdot \text{difference} \cdot f_i(s, a) `
 
-其中：$ \text{difference} = (r + \gamma \max_{a'} Q(s', a')) - Q(s, a) $
+其中：` \text{difference} = (r + \gamma \max_{a'} Q(s', a')) - Q(s, a) `
 
 这个公式中的difference项与普通Q-learning的更新方式一致。
 
