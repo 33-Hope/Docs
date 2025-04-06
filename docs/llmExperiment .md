@@ -27,23 +27,21 @@ nav_order: 6
 
 1. 模型水印实现（kgw算法）
 
-本实验以X-SIR代码仓库为基础，使用Hugging Face Transformers工具加载开源大语言模型（如LLaMa3、ChatGLM3等），采用kgw算法对给定的文本生成任务数据（该数据实验会提供）进行水印嵌入、水印检测和水印评估，其中水印评估需要画出ROC曲线。
-
-![img](../assets/images/llmExp/XSIR.png)
+   本实验以X-SIR代码仓库为基础，使用Hugging Face Transformers工具加载开源大语言模型（如LLaMa3、ChatGLM3等），采用kgw算法对给定的文本生成任务数据（该数据实验会提供）进行水印嵌入、水印检测和水印评估，其中水印评估需要画出ROC曲线。![img](../assets/images/llmExp/XSIR.png)
 
 <center style="font-size:16px;color:#C0C0C0;">图6.1 X-SIR代码仓库</center> 
 
 2. 模型水印鲁棒性实验
 
-水印去除攻击的方法有两种，分别为paraphrase和translation，在评估水印的鲁棒性实验中，可以对水印文本进行paraphrase和translation攻击后，评估其检测效果。
+   水印去除攻击的方法有两种，分别为paraphrase和translation，在评估水印的鲁棒性实验中，可以对水印文本进行paraphrase和translation攻击后，评估其检测效果。
 
 3. 不同开源模型
 
-对比不同大语言模型（实验会提供，不需要单独下载）下水印检测的准确度，并评估在不同大语言模型中的水印效果。
+   对比不同大语言模型（实验会提供，不需要单独下载）下水印检测的准确度，并评估在不同大语言模型中的水印效果。
 
- 三种水印算法评估
+4. 三种水印算法评估
 
-比较X-SIR方法中三种不同算法（kgw，x-sir，sir），评估其在不同攻击方法下的性能，以及三种算法水印检测效果。 
+   比较X-SIR方法中三种不同算法（kgw，x-sir，sir），评估其在不同攻击方法下的性能，以及三种算法水印检测效果。 
 
 ## 1.3    实验要求
 
@@ -81,11 +79,7 @@ nav_order: 6
 
 随着多模态人工智能的发展，如何高效处理和理解视频的内容成为重要的课题。大量公开课程、讲座和会议录音包含丰富的知识，但其冗长的内容给信息获取带来了诸多不便。
 
-本实验结合自动语音识别（ASR）和大语言模型（LLMs），实现从视频到摘要/总结的全过程，体会人工智能如何提升内容获取的效率。
-
-
-
-![img](../assets/images/llmExp/SummaryProcess.png)
+本实验结合自动语音识别（ASR）和大语言模型（LLMs），实现从视频到摘要/总结的全过程，体会人工智能如何提升内容获取的效率。![img](../assets/images/llmExp/SummaryProcess.png)
 
 <center style="font-size:16px;color:#C0C0C0;">图6.2 讲座视频摘要流程</center> 
 
@@ -93,33 +87,33 @@ nav_order: 6
 
 1. 自动语音识别
 
-使用OpenAI的Whisper模型对给定的讲座视频进行语音识别，获取视频的文本信息。
+   使用OpenAI的Whisper模型对给定的讲座视频进行语音识别，获取视频的文本信息
 
 2. 文本摘要
 
-构建自己的大语言模型prompt，将文本摘要为300-500字，摘要结果为中文。
+   构建自己的大语言模型prompt，将文本摘要为300-500字，摘要结果为中文。
 
 3. 两种摘要方法
 
-将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。
+   将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。
 
 ![img](../assets/images/llmExp/MultiStageSummary.png)
 
 <center style="font-size:16px;color:#C0C0C0;">图6.3 多阶段摘要</center> 
 
-![img](../assets/images/llmExp//ProgressiveSummary.png)
+![img](../assets/images/llmExp/ProgressiveSummary.png)
 
 <center style="font-size:16px;color:#C0C0C0;">图6.4 递进式摘要</center> 
 
 4. 多种prompt效果比较
 
-该实验重点在于构建prompt，构建不同的prompt获得不同的摘要效果，比较不同prompt下摘要的优劣，并对prompt进行优化。
+   该实验重点在于构建prompt，构建不同的prompt获得不同的摘要效果，比较不同prompt下摘要的优劣，并对prompt进行优化。
 
 5. 摘要评估
 
-自行利用设计prompt，利用大语言模型评估摘要的质量，获得评分（0-100分）。
+   自行利用设计prompt，利用大语言模型评估摘要的质量，获得评分（0-100分）。
 
-***注：\***自行设计的评估prompt作为报告的一部分，其评估分数也是报告的一部分。
+**注：自行设计的评估prompt作为报告的一部分，其评估分数也是报告的一部分。**
 
 ## 1.3    实验要求
 
