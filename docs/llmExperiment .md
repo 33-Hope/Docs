@@ -4,32 +4,31 @@ title: 大模型（二选一）模型水印，讲座摘要
 parent: 实验题目
 nav_order: 6
 ---
-# Contents
+# 本节实验选择其中一项完成即可
+
+## Contents
 {: .no_toc .text-delta }
 
 1. TOC
-
 {:toc}
-
-# **本节实验选择其中一项完成即可**
 
 ---
 
 # （选择1）大语言模型水印检测
 
-## 1.1    实验背景
+## 1 .1实验背景
 
 随着大规模预训练语言模型（LLMs）的广泛应用，模型的知识产权保护、输出内容可追溯性等问题愈发突出。因此，训练完成的模型称为了一种昂贵的数字资产，如何从技术角度保护模型的知识产权变得极其重要。为了解决这一挑战，模型水印（Watermarking）技术应运而生，作为一种有效的技术手段，可以嵌入特定的标识信息，防止模型的滥用、盗用或未授权的使用。通过模型水印技术，模型的输出结果可以被追踪和验证，从而增加模型的可控性和可靠性。
 
 本实验通对向模型的生成文本中嵌入隐性水印，帮助理解水印如何嵌入到自然语言生成中，以及如何验证水印的有效性和如何应对模型滥用等问题。
 
-## 1.2    实验内容
+## 1.2实验内容
 
 1. 模型水印实现（kgw算法）
 
    本实验以X-SIR代码仓库为基础，使用Hugging Face Transformers工具加载开源大语言模型（如LLaMa3、ChatGLM3等），采用kgw算法对给定的文本生成任务数据（该数据实验会提供）进行水印嵌入、水印检测和水印评估，其中水印评估需要画出ROC曲线。![img](../assets/images/llmExp/XSIR.png)
 
-<center style="font-size:16px;color:#C0C0C0;">图6.1 X-SIR代码仓库</center> 
+<center style="font-size:16px;color:#C0C0C0;">图1 X-SIR代码仓库</center> 
 
 2. 模型水印鲁棒性实验
 
@@ -43,7 +42,7 @@ nav_order: 6
 
    比较X-SIR方法中三种不同算法（kgw，x-sir，sir），评估其在不同攻击方法下的性能，以及三种算法水印检测效果。 
 
-## 1.3    实验要求
+## 1.3实验要求
 
 1. 掌握Hugging Face Transformers工具包加载大语言模型（如ChatGML、LLaMa等）
 
@@ -57,7 +56,7 @@ nav_order: 6
 
 6.   使用Python语言
 
-## 1.4    参考资料及数据模型下载地址
+## 1.4参考资料及数据模型下载地址
 
 **参考资料**
 
@@ -71,11 +70,9 @@ nav_order: 6
 
 5.   Google SynthID模型水印论文：[Scalable watermarking for identifying large language model outputs | Nature](https://www.nature.com/articles/s41586-024-08025-4)
 
----
-
 # （选择2）讲座视频摘要
 
-## 1.1    实验背景
+## 2.1    实验背景
 
 随着多模态人工智能的发展，如何高效处理和理解视频的内容成为重要的课题。大量公开课程、讲座和会议录音包含丰富的知识，但其冗长的内容给信息获取带来了诸多不便。
 
@@ -83,7 +80,7 @@ nav_order: 6
 
 <center style="font-size:16px;color:#C0C0C0;">图6.2 讲座视频摘要流程</center> 
 
-## 1.2    实验内容
+## 2.2    实验内容
 
 1. 自动语音识别
 
@@ -107,7 +104,7 @@ nav_order: 6
 
 **注：自行设计的评估prompt作为报告的一部分，其评估分数也是报告的一部分。**
 
-## 1.3    实验要求
+## 2.3    实验要求
 
 1. 了解自动语音识别（ASR）原理，学会使用OpenAI Whisper实现转写
 
@@ -117,12 +114,10 @@ nav_order: 6
 
 4. 使用Python语言
 
-## 1.4    参考资料
+## 2.4    参考资料
 
 1. Whisper：[openai/whisper: Robust Speech Recognition via Large-Scale Weak Supervision](https://github.com/openai/whisper)
 
 2. 摘要评价参考论文：[[2305.17529\] MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)
 
 3. 文本摘要LangChain代码：[generative-ai/language/use-cases/document-summarization/summarization_large_documents_langchain.ipynb at main · GoogleCloudPlatform/generative-ai](https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/document-summarization/summarization_large_documents_langchain.ipynb)
-
- 
