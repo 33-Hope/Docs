@@ -49,9 +49,9 @@ mathjax: true
 在提供的参考代码中，可以看到一个网格世界，智能体回根据计算出来的价值自动导航到出口。
 
 值迭代状态更新公式：
-
- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>`V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]`
-
+$$
+\begin{equation}V_{k+1}(s) \leftarrow \max_a \sum_{s'} T(s, a, s') [R(s, a, s') + \gamma V_k(s')]\end{equation}
+$$
 操作命令：
 
 （1）测试算法算法正确性
