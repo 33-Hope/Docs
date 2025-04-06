@@ -26,9 +26,7 @@ nav_order: 6
 
 1. 模型水印实现（kgw算法）
 
-   本实验以X-SIR代码仓库为基础，使用Hugging Face Transformers工具加载开源大语言模型（如LLaMa3、ChatGLM3等），采用kgw算法对给定的文本生成任务数据（该数据实验会提供）进行水印嵌入、水印检测和水印评估，其中水印评估需要画出ROC曲线。![img](../assets/images/llmExp/XSIR.png)
-
-<center style="font-size:16px;color:#C0C0C0;">图1 X-SIR代码仓库</center> 
+   本实验以X-SIR代码仓库为基础，使用Hugging Face Transformers工具加载开源大语言模型（如LLaMa3、ChatGLM3等），采用kgw算法对给定的文本生成任务数据（该数据实验会提供）进行水印嵌入、水印检测和水印评估，其中水印评估需要画出ROC曲线。![img](../assets/images/llmExp/XSIR.png)<center style="font-size:16px;color:#C0C0C0;">图1 X-SIR代码仓库</center> 
 
 2. 模型水印鲁棒性实验
 
@@ -68,7 +66,7 @@ nav_order: 6
 
 4. Google SynthID模型水印：[SynthID - Google DeepMind](https://deepmind.google/technologies/synthid/)
 
-5.   Google SynthID模型水印论文：[Scalable watermarking for identifying large language model outputs | Nature](https://www.nature.com/articles/s41586-024-08025-4)
+5.   Google SynthID模型水印论文：[Scalable watermarking for identifying large language model outputs  Nature](https://www.nature.com/articles/s41586-024-08025-4)
 
 # （选择2）讲座视频摘要
 
@@ -78,7 +76,7 @@ nav_order: 6
 
 本实验结合自动语音识别（ASR）和大语言模型（LLMs），实现从视频到摘要/总结的全过程，体会人工智能如何提升内容获取的效率。![img](../assets/images/llmExp/SummaryProcess.png)
 
-<center style="font-size:16px;color:#C0C0C0;">图6.2 讲座视频摘要流程</center> 
+<center style="font-size:16px;color:#C0C0C0;">图2 讲座视频摘要流程</center> 
 
 ## 2.2    实验内容
 
@@ -92,7 +90,7 @@ nav_order: 6
 
 3. 两种摘要方法
 
-   将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。![img](../assets/images/llmExp/MultiStageSummary.png)<center style="font-size:16px;color:#C0C0C0;">图6.3 多阶段摘要</center> ![img](images/ProgressiveSummary.png)<center style="font-size:16px;color:#C0C0C0;">图6.4 递进式摘要</center> 
+   将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。![img](../assets/images/llmExp/MultiStageSummary.png)<center style="font-size:16px;color:#C0C0C0;">图3 多阶段摘要</center> ![img](images/ProgressiveSummary.png)<center style="font-size:16px;color:#C0C0C0;">图4 递进式摘要</center> 
 
 4. 多种prompt效果比较
 
@@ -102,7 +100,7 @@ nav_order: 6
 
    自行利用设计prompt，利用大语言模型评估摘要的质量，获得评分（0-100分）。
 
-**注：自行设计的评估prompt作为报告的一部分，其评估分数也是报告的一部分。**
+<u>**注：自行设计的评估prompt作为报告的一部分，其评估分数也是报告的一部分。**</u>
 
 ## 2.3    实验要求
 

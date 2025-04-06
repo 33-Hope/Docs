@@ -26,10 +26,8 @@ nav_order: 5
 
 1. 文本分类任务微调（虚假新闻检测）
 
-   了解Transformers代码库中的文本分类案例，使用Hugging Face Transformers 工具包完成预训练模型的加载与微调。实验过程包括：选定数据集、调用tokenizer进行文本编码、设置训练参数并启动模型训练，最后在验证集上评估模型性能。可自由选择如BERT、RoBERTa等不同结构的预训练模型，并观察其在任务表现上的差异。![img](../assets/images/FineTuning/contentTag.png)
+   了解Transformers代码库中的文本分类案例，使用Hugging Face Transformers 工具包完成预训练模型的加载与微调。实验过程包括：选定数据集、调用tokenizer进行文本编码、设置训练参数并启动模型训练，最后在验证集上评估模型性能。可自由选择如BERT、RoBERTa等不同结构的预训练模型，并观察其在任务表现上的差异。![img](../assets/images/FineTuning/contentTag.png)<center style="font-size:16px;color:#C0C0C0;">图1.2 Hugging Face Transformers工具包代码仓库</center> 
    
-
-<center style="font-size:16px;color:#C0C0C0;">图1.2 Hugging Face Transformers工具包代码仓库</center> 
 
 2. 模型部署
 
@@ -69,7 +67,7 @@ nav_order: 5
 
 1. Bert-base-uncased：[google-bert/bert-base-uncased · Hugging Face](https://huggingface.co/google-bert/bert-base-uncased)
 
-2. Kaggle上虚假推文数据集：[Natural Language Processing with Disaster Tweets | Kaggle](https://www.kaggle.com/c/nlp-getting-started/data)
+2. Kaggle上虚假推文数据集：[Natural Language Processing with Disaster Tweets Kaggle](https://www.kaggle.com/c/nlp-getting-started/data)
 
 3. IMDB数据：[Sentiment Analysis](http://ai.stanford.edu/~amaas/data/sentiment/)
 

@@ -54,7 +54,7 @@ mathjax: true
 
 操作命令：
 
-（1）测试算法算法正确性：
+（1）测试算法算法正确性
 
 ```bash
 python autograder.py -q q1
