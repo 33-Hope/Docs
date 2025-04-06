@@ -6,8 +6,40 @@ url: https://33-Hope.github.io/Docs
 
 aux_links:
   Template Repository: https://github.com/33-Hope/Docs
-compress_html:
-  blanklines: true
-mathjax:
-  source: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML
-  config: 'MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } })'
+
+  
+math: mathjax
+
+# Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
+
+# Split pages into sections that can be searched individually
+# Supports 1 - 6, default: 2
+search.heading_level: 2
+
+# Maximum amount of previews per search result
+# Default: 3
+search.previews: 3
+
+# Maximum amount of words to display before a matched word in the preview
+# Default: 5
+search.preview_words_before: 5
+
+# Maximum amount of words to display after a matched word in the preview
+# Default: 10
+search.preview_words_after: 10
+
+# Set the search token separator
+# Default: /[\s\-/]+/
+# Example: enable support for hyphenated search words
+search.tokenizer_separator: /[\s/]+/
+
+# Display the relative url in search results
+# Supports true (default) or false
+search.rel_url: false
+
+# Enable or disable the search button that appears in the bottom right corner of every page
+# Supports true or false (default)
+search.button: true
+

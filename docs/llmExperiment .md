@@ -106,11 +106,13 @@ nav_order: 6
 
 1. 了解自动语音识别（ASR）原理，学会使用OpenAI Whisper实现转写
 
-2. 学会写大语言模型prompt，针对特定的问题构建特定的prompt
+2. 
 
-3. 需要提交实验报告、生成的摘要（.txt格式）、转写文本（.txt格式）、摘要的方法选择说明、生成摘要的prompt、评估prompt
+3. 学会写大语言模型prompt，针对特定的问题构建特定的prompt
 
-4. 使用Python语言
+4. 需要提交实验报告、生成的摘要（.txt格式）、转写文本（.txt格式）、摘要的方法选择说明、生成摘要的prompt、评估prompt
+
+5. 使用Python语言
 
 ## 2.4    参考资料
 

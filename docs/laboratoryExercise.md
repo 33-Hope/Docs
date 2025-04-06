@@ -3,7 +3,6 @@ layout: default
 title: 实验题目
 nav_order: 3
 has_children: true
-layout: default
 ---
 
 # 实验题目
