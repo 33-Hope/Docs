@@ -90,7 +90,7 @@ nav_order: 6
 
 3. 两种摘要方法
 
-   将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。![img](../assets/images/llmExp/MultiStageSummary.png)<center style="font-size:16px;color:#C0C0C0;">图3 多阶段摘要</center> ![img](images/ProgressiveSummary.png)<center style="font-size:16px;color:#C0C0C0;">图4 递进式摘要</center> 
+   将未处理的文本直接出入到大语言模型中，让大语言模型直接对全文进行摘要。但是这种直接摘要的方法存在一定的问题，由于大语言模型输入token长度的限制，如果文本太长，大语言模型无法一次性处理所有的文本。所以在该实验中可以采用以下两种方法：（1）多阶段摘要；（2）递进式摘要。![img](../assets/images/llmExp/MultiStageSummary.png)<center style="font-size:16px;color:#C0C0C0;">图3 多阶段摘要</center> ![img](../assets/images/llmExp/ProgressiveSummary.png)<center style="font-size:16px;color:#C0C0C0;">图4 递进式摘要</center> 
 
 4. 多种prompt效果比较
 
